@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">Leone XIV — Anatomia di una diagnosi</title>
+<desc id="desc">Copertina editoriale del dossier interattivo sulla salute di Leone XIV, con illustrazione anatomica schematica dei polmoni.</desc>
+<defs>
+  <linearGradient id="night" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1018"/><stop offset=".54" stop-color="#122033"/><stop offset="1" stop-color="#070D17"/></linearGradient>
+  <radialGradient id="halo" cx="65%" cy="44%" r="62%"><stop offset="0" stop-color="#273C56" stop-opacity=".82"/><stop offset=".65" stop-color="#17253B" stop-opacity=".35"/><stop offset="1" stop-color="#0B111B" stop-opacity="0"/></radialGradient>
+  <linearGradient id="lungA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B98490" stop-opacity=".96"/><stop offset="1" stop-color="#773744" stop-opacity=".62"/></linearGradient>
+  <linearGradient id="lungB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C2A5B0" stop-opacity=".89"/><stop offset="1" stop-color="#6F445B" stop-opacity=".72"/></linearGradient>
+  <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#7790AB" stroke-width=".65" opacity=".17"/></pattern>
+  <filter id="blur"><feGaussianBlur stdDeviation="24"/></filter>
+  <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1200" height="630" fill="url(#night)"/>
+<rect x="720" width="480" height="630" fill="url(#halo)"/>
+<rect x="740" y="0" width="460" height="630" fill="url(#grid)"/>
+<circle cx="965" cy="298" r="255" fill="none" stroke="#91A9BD" opacity=".24" stroke-width="1"/>
+<circle cx="965" cy="298" r="215" fill="none" stroke="#91A9BD" opacity=".17" stroke-width="1" stroke-dasharray="7 11"/>
+<circle cx="965" cy="298" r="175" fill="none" stroke="#91A9BD" opacity=".13" stroke-width="1"/>
+<path d="M965 34V565M725 297H1200" stroke="#91A9BD" stroke-width="1" stroke-dasharray="4 10" opacity=".16"/>
+<ellipse cx="943" cy="325" rx="145" ry="154" fill="#DB5A66" opacity=".13" filter="url(#blur)"/>
+<!-- Schematizzazione anatomica, non un'immagine diagnostica del Papa -->
+<g stroke-linejoin="round" stroke-linecap="round">
+  <path d="M931 187C903 167 862 183 837 212C804 251 791 314 796 371C800 420 817 463 855 487C884 507 919 488 931 463L931 291C917 282 911 270 911 251C911 231 917 205 931 187Z" fill="url(#lungA)" stroke="#E0B5BD" stroke-width="2.5"/>
+  <path d="M954 188C987 163 1037 174 1077 206C1110 237 1137 299 1129 375C1124 431 1095 479 1058 492C1014 507 974 471 953 448L953 288C969 279 977 265 977 248C977 228 966 203 954 188Z" fill="url(#lungB)" stroke="#D1B3C0" stroke-width="2.5"/>
+  <path d="M926 129V249M960 129V249" fill="none" stroke="#A8C4D6" stroke-width="9" opacity=".62"/>
+  <path d="M942 121V264" fill="none" stroke="#EBF1F5" stroke-width="8"/>
+  <path d="M942 264C917 285 883 300 861 336M942 264C973 284 1024 297 1060 345" stroke="#F4DCE0" stroke-width="9" fill="none"/>
+  <g stroke="#F4DCE0" stroke-width="3" fill="none" opacity=".74">
+    <path d="M861 336L839 377M861 336L875 388M895 290L874 264M895 290L825 304M905 293L909 356M875 388L860 438M883 382L911 421"/>
+    <path d="M1060 345L1085 388M1060 345L1030 406M1002 289L1026 260M1002 289L1091 304M996 294L975 364M1030 406L1052 452M1085 388L1091 439"/>
+  </g>
+  <g fill="none" stroke="#EAB7BE" stroke-width="1.6" opacity=".58">
+    <path d="M835 338Q881 355 909 397M1024 355Q1068 365 1114 346M825 408Q877 424 922 440"/>
+  </g>
+  <path d="M953 276C981 286 1009 322 1018 346L1004 384C988 372 975 345 953 332Z" fill="#B72D42" fill-opacity=".34" stroke="#F26B7E" stroke-width="2" stroke-dasharray="5 5"/>
+  <circle cx="1003" cy="359" r="9" fill="#D94356" stroke="#FFE3E6" stroke-width="2" filter="url(#glow)"/>
+  <circle cx="1003" cy="359" r="23" fill="none" stroke="#ED8895" stroke-width="1.5" stroke-dasharray="3 5" opacity=".75"/>
+</g>
+<rect x="74" y="67" width="49" height="4" fill="#BF3947"/>
+<text x="140" y="72" fill="#D5DDE5" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" letter-spacing="5" font-weight="600">DOSSIER INTERATTIVO</text>
+<text x="75" y="221" fill="#FAF8F4" font-family="DejaVu Serif,Georgia,serif" font-size="94" letter-spacing="-4" font-weight="700">LEONE</text>
+<text x="490" y="221" fill="#C94758" font-family="DejaVu Serif,Georgia,serif" font-size="94" letter-spacing="-4" font-weight="700">XIV</text>
+<rect x="76" y="250" width="540" height="1" fill="#8190A1" opacity=".32"/>
+<text x="76" y="323" fill="#F5F3EF" font-family="DejaVu Serif,Georgia,serif" font-size="50" font-weight="500">ANATOMIA DI</text>
+<text x="76" y="385" fill="#F5F3EF" font-family="DejaVu Serif,Georgia,serif" font-size="50" font-weight="500">UNA DIAGNOSI</text>
+<rect x="76" y="414" width="87" height="4" fill="#BF3947"/>
+<text x="76" y="460" fill="#C8D0D9" font-family="DejaVu Sans,Arial,sans-serif" font-size="22">Il tumore, l'intervento, la storia familiare</text>
+<text x="76" y="493" fill="#C8D0D9" font-family="DejaVu Sans,Arial,sans-serif" font-size="22">e le domande ancora aperte.</text>
+<path d="M75 554H625" stroke="#AAB7C3" opacity=".30"/>
+<text x="76" y="584" fill="#D1D8DF" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" letter-spacing="2.5">SPECIALE GIORNALISTICO · 2026</text>
+<text x="951" y="564" fill="#B9C7D4" font-family="DejaVu Sans,Arial,sans-serif" font-size="11" letter-spacing="1.4" text-anchor="middle">ILLUSTRAZIONE SCHEMATICA</text>
+<rect x="0" y="618" width="1200" height="12" fill="#B52B35"/>
+</svg>
