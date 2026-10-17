@@ -28,6 +28,9 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html _site/index.html
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq librsvg2-bin
+          rsvg-convert --width 1200 --height 630 social-preview.svg --output _site/social-preview.png
           touch _site/.nojekyll
 
       - name: Configura GitHub Pages
