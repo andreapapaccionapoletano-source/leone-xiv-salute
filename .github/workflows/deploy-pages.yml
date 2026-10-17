@@ -29,8 +29,12 @@ jobs:
           mkdir -p _site
           cp index.html _site/index.html
           sudo apt-get update -qq
-          sudo apt-get install -y -qq librsvg2-bin
+          sudo apt-get install -y -qq librsvg2-bin imagemagick
           rsvg-convert --width 1200 --height 630 social-preview.svg --output _site/social-preview.png
+          convert _site/social-preview.png -strip -interlace Plane -quality 88 _site/leone-xiv-social-v2.jpg
+          test -s _site/leone-xiv-social-v2.jpg
+          file _site/leone-xiv-social-v2.jpg
+          identify -format 'Cover: %m %wx%h, %b\n' _site/leone-xiv-social-v2.jpg
           touch _site/.nojekyll
 
       - name: Configura GitHub Pages
