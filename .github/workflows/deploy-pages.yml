@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -36,6 +36,19 @@ jobs:
           file _site/leone-xiv-social-v2.jpg
           identify -format 'Cover: %m %wx%h, %b\n' _site/leone-xiv-social-v2.jpg
           touch _site/.nojekyll
+
+      - name: Salva la copertina nel repository per tutte le modalità di GitHub Pages
+        run: |
+          cp _site/leone-xiv-social-v2.jpg leone-xiv-social-v2.jpg
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add leone-xiv-social-v2.jpg
+          if ! git diff --cached --quiet; then
+            git commit -m "Salva copertina JPG per anteprime WhatsApp e X [skip ci]"
+            git push origin HEAD:main
+          else
+            echo "Copertina JPG gia presente e aggiornata."
+          fi
 
       - name: Configura GitHub Pages
         uses: actions/configure-pages@v5
